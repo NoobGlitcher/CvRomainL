@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.google.android.gms.permission.PAYMENT_BROADCAST_PERMISSION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="CV Romain LURIER"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CvRomainL"
+        tools:targetApi="31">
+        <activity
+            android:name=".View.Bidules"
+            android:exported="true"
+            android:screenOrientation="portrait"/>
+        <activity
+            android:name=".View.Createuser"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.CheckoutSuccessActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.CheckoutActivity"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="com.google.android.gms.wallet.api.enabled"
+            android:value="true" />
+
+        <activity
+            android:name=".View.dataGame"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.chickenGame"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.Animation"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.Eshop"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.loggin"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false"
+            android:usesCleartextTraffic="true" />
+
+        <activity
+            android:name=".View.game"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.siteModificator"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".View.MainActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
