@@ -77,13 +77,11 @@ public class siteModificator extends AppCompatActivity {
 
 
         iLogo = findViewById(R.id.imgLogo);
-        iLeft = findViewById(R.id.imgLeft);
-        iRight = findViewById(R.id.imgRight);
+
 
 
         mLogo = findViewById(R.id.LogoSearch);
-        mLeft = findViewById(R.id.LeftSearch);
-        mRight = findViewById(R.id.RightSearch);
+
         bModificator = findViewById(R.id.buttonModificator);
 
         bModificator.setEnabled(false); // Désactive les clics
@@ -91,8 +89,7 @@ public class siteModificator extends AppCompatActivity {
 
 
         tLogo = findViewById(R.id.logoText);
-        tLeft = findViewById(R.id.LeftText);
-        tRight = findViewById(R.id.RightText);
+
         tContact = findViewById(R.id.textContact);
         tvalidation = findViewById(R.id.textValidation);
 
