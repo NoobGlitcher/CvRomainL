@@ -144,107 +144,27 @@ public class siteModificator extends AppCompatActivity {
             startActivityForResult(intent, 1);
         });
 
-        mLeft.setOnClickListener(v -> {
 
-            mrb1.setSelected(false);
-            mrb2.setSelected(true);
-            mrb3.setSelected(false);
-
-            Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-            startActivityForResult(intent, 1);
-        });
-
-        mRight.setOnClickListener(v -> {
-
-            mrb1.setSelected(false);
-            mrb2.setSelected(false);
-            mrb3.setSelected(true);
-
-            Intent intent = new Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI);
-            startActivityForResult(intent, 1);
-        });
 
         bModificator.setOnClickListener(view -> {
 
 
             ContactDescri = eTextContact.getText().toString();
             Drawable iLogoEnvoie = iLogo.getDrawable();
-            Drawable iLeftEnvoie = iLeft.getDrawable();
-            Drawable iRightEnvoie = iRight.getDrawable();
+
 
 
 
 // Vérification si le Drawable est une instance de BitmapDrawable (c'est-à-dire une image bitmap)
             if (iLogoEnvoie instanceof BitmapDrawable) {
 
-                if (iLeftEnvoie instanceof BitmapDrawable) {
 
-                    if (iRightEnvoie instanceof BitmapDrawable) {
 
                         LogoEnvoie (iLogoEnvoie, ContactDescri);
-                        LeftEnvoie (iLeftEnvoie, ContactDescri);
-                        RightEnvoie(iRightEnvoie, ContactDescri);
-                        iLogo.setImageBitmap(null);
-                        iRight.setImageBitmap(null);
-                        iLeft.setImageBitmap(null);
 
+                        iLogo.setImageBitmap(null); }
 
-
-                    } else {
-                        LogoEnvoie (iLogoEnvoie, ContactDescri);
-                        LeftEnvoie (iLeftEnvoie, ContactDescri);
-                        iLogo.setImageBitmap(null);
-                        iLeft.setImageBitmap(null);
-
-
-                    }
-
-                } else if (iRightEnvoie instanceof BitmapDrawable) {
-
-                        LogoEnvoie (iLogoEnvoie, ContactDescri);
-                        RightEnvoie(iRightEnvoie, ContactDescri);
-                    iRight.setImageBitmap(null);
-                    iLogo.setImageBitmap(null);
-
-
-
-
-                } else {
-                        LogoEnvoie (iLogoEnvoie, ContactDescri);
-                    iLogo.setImageBitmap(null);
-
-
-
-
-                }
-
-
-
-            } else {
-
-                if (iLeftEnvoie instanceof BitmapDrawable) {
-
-                    if (iRightEnvoie instanceof BitmapDrawable) {
-
-                        LeftEnvoie (iLeftEnvoie, ContactDescri);
-                        RightEnvoie(iRightEnvoie, ContactDescri);
-                        iRight.setImageBitmap(null);
-                        iLeft.setImageBitmap(null);
-
-                    }
-                } else {
-
-                    if (iRightEnvoie instanceof BitmapDrawable) {
-
-                        RightEnvoie (iRightEnvoie, ContactDescri);
-                        iRight.setImageBitmap(null);
-
-                    } else {
-
-                        if (eTextContact.getText().toString().trim().isEmpty()) {
-                            tvalidation.setVisibility(View.VISIBLE);
-                            tvalidation.setText("Veuillez choisir un élément à modifier");
-                        } else {
+                             else {
                             String url = "https://oribabil.myhostpoint.ch/createusers/action/siteModificator.php";
 
                             Map<String, String> params = new HashMap<>();
@@ -255,11 +175,11 @@ public class siteModificator extends AppCompatActivity {
                         }
 
 
-                    }
 
-                }
 
-            }
+
+
+
 
 // Créez un objet Handler
             Handler handler = new Handler();

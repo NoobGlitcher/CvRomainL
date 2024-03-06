@@ -86,7 +86,7 @@ public class Createuser extends AppCompatActivity {
                 new Handler().postDelayed(() -> progressBar.setVisibility(View.GONE), 4000);
 
                 username = mIDtext.getText().toString();
-                password = mPassword3.getText().toString();
+                password = mPassword2.getText().toString();
                 mail = mClef.getText().toString();
                 int Pays;
 
