@@ -367,7 +367,7 @@ public class siteModificator extends AppCompatActivity {
         String donneeLogo = Base64.encodeToString(bLogo, Base64.DEFAULT);
 
 
-        String url = "https://oribabil.myhostpoint.ch/createusers/action/siteModificator.php";
+        String url = "https://www.lemarchedescrateurs.ch/createusers/action/siteModificator.php";
 
         Map<String, String> params = new HashMap<>();
 
@@ -398,7 +398,7 @@ public class siteModificator extends AppCompatActivity {
         String donneeLeft = Base64.encodeToString(bLeft, Base64.DEFAULT);
 
 
-        String url = "https://oribabil.myhostpoint.ch/createusers/action/siteModificator.php";
+        String url = "https://www.lemarchedescrateurs.ch/createusers/action/siteModificator.php";
 
         Map<String, String> params = new HashMap<>();
 
@@ -426,7 +426,7 @@ public class siteModificator extends AppCompatActivity {
         String donneeRight = Base64.encodeToString(bRight, Base64.DEFAULT);
 
 
-        String url = "https://oribabil.myhostpoint.ch/createusers/action/siteModificator.php";
+        String url = "https://www.lemarchedescrateurs.ch/createusers/action/siteModificator.php";
 
         Map<String, String> params = new HashMap<>();
 
