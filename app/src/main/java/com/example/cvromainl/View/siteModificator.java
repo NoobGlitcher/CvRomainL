@@ -376,7 +376,7 @@ public class siteModificator extends AppCompatActivity {
 
         JSONObject parameters = new JSONObject(params);
 
-        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, parameters, this::onApiResponse, error -> Toast.makeText(getApplicationContext(), "erreur de connection au serveur !!", Toast.LENGTH_LONG).show());
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, parameters, this::onApiResponse, error -> Toast.makeText(getApplicationContext(), "oupppppps!!", Toast.LENGTH_LONG).show());
 
         mdatabasemanager.queue.add(jsonObjectRequest);
 
