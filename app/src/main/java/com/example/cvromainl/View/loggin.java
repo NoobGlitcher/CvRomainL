@@ -133,7 +133,7 @@ public class loggin extends AppCompatActivity {
 
         public void connectUser () {
 
-            String url = "https://oribabil.myhostpoint.ch/createusers/action/connectuser.php";
+            String url = "https://www.lemarchedescrateurs.ch/createusers/action/connectuser.php";
             Map<String, String> params = new HashMap<>() ;
             params.put("username", username);
             params.put("password", password);

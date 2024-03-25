@@ -137,7 +137,7 @@ public class Createuser extends AppCompatActivity {
 
         public void createAccount () {
 
-            String url = "https://oribabil.myhostpoint.ch/createusers/action/createaccount.php";
+            String url = "https://www.lemarchedescrateurs.ch/createusers/action/createaccount.php";
 
             Map<String, String> params = new HashMap<>() ;
 

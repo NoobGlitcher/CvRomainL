@@ -71,7 +71,7 @@ public class siteModificator extends AppCompatActivity {
         webView.setWebViewClient(new WebViewClient());
 
         // Charger l'URL du site web
-        webView.loadUrl("https://oribabil.myhostpoint.ch");
+        webView.loadUrl("https://www.lemarchedescrateurs.ch");
 
         mdatabasemanager= new DatabaseManager(getApplicationContext());
 
@@ -165,7 +165,7 @@ public class siteModificator extends AppCompatActivity {
                         iLogo.setImageBitmap(null); }
 
                              else {
-                            String url = "https://oribabil.myhostpoint.ch/createusers/action/siteModificator.php";
+                            String url = "https://www.lemarchedescrateurs.ch/createusers/action/siteModificator.php";
 
                             Map<String, String> params = new HashMap<>();
                             params.put("texteContact", ContactDescri);

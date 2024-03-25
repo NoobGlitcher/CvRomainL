@@ -128,7 +128,7 @@ public class Bidules extends AppCompatActivity {
         params.put("img_type", TextileType);
         JSONObject parameters = new JSONObject(params);
 
-        String url = "https://oribabil.myhostpoint.ch/createusers/action/testReception.php";
+        String url = "https://www.lemarchedescrateurs.ch/createusers/action/testReception.php";
         @SuppressLint("ResourceType") JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, url, parameters,
                 response -> {
                     // Traitement de la réponse JSON
